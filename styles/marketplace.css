@@ -1,0 +1,19 @@
+.collectixt {
+    padding: 4rem 0;
+}
+
+.collectixt h1 {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #0D1723;
+    text-align: center;
+}
+
+.collectixt .description p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #575E66;
+    margin-top: 3rem;
+}
