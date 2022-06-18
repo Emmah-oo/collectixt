@@ -25,6 +25,12 @@
                 <a href="#"><li>Whitepaper</li></a>
                 <a href="faq.html"><li>FAQ</li></a>
             </ul>
+
+            <div class="burger">
+                <div class="line-1 line"></div>
+                <div class="line-2 line"></div>
+                <div class="line-3 line"></div>
+            </div>
         </nav>
     </header>
     <!-- Main Header End -->
@@ -160,7 +166,7 @@
                 </div>
                 <div class="links">
                     <h1>Links</h1>
-                    <ul class="nav-links">
+                    <ul class="footer-links">
                         <div class="link-1">
                             <a href="#"><li>About</li></a>
                             <a href="#"><li>Tokenomics</li></a>
@@ -195,15 +201,35 @@
                     </div>
                     <div class="socials">
                         <h3>Connect with Us</h3>
-                        <img src="img/socials/Vector.png" alt="Telegram">
-                        <img src="img/socials/Vector-1.png" alt="Facebook">
-                        <img src="img/socials/Vector-2.png" alt="Twitter">
-                        <img src="img/socials/Vector-3.png" alt="Youtube">
+                            <div class="imgs">
+                            <img src="img/socials/Vector.png" alt="Telegram">
+                            <img src="img/socials/Vector-1.png" alt="Facebook">
+                            <img src="img/socials/Vector-2.png" alt="Twitter">
+                            <img src="img/socials/Vector-3.png" alt="Youtube">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
     <!-- footer end -->
+
+    <script>
+        const navLinks = document.querySelector(".nav-links");
+        const burger = document.querySelector(".burger");
+        const navbar = document.querySelector("nav");
+        window.onscroll = () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        };
+
+        burger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+            burger.classList.toggle("toggled");
+        });
+    </script>
 </body>
 </html>

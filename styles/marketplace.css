@@ -1,5 +1,14 @@
+.collectixt-img {
+    width: 100%;
+}
+
+.collectixt-img img {
+    width: 100%;
+}
+
 .collectixt {
     padding: 4rem 0;
+    margin-top: 4rem;
 }
 
 .collectixt h1 {

@@ -25,6 +25,11 @@
           <a href="#"><li>Whitepaper</li></a>
           <a href="faq.html"><li>FAQ</li></a>
         </ul>
+        <div class="burger">
+          <div class="line-1 line"></div>
+          <div class="line-2 line"></div>
+          <div class="line-3 line"></div>
+        </div>
       </nav>
     </header>
     <!-- Main Header End -->
@@ -88,23 +93,23 @@
         <div class="accordion__content">
             <ul>
                 <li>
-                Governance: The Collectixt Token is used to vote in governance
+                    &#183;Governance: The Collectixt Token is used to vote in governance
                 policy referendums. Holders of Ambitchous Tokens can vote with
                 their tokens in the Ambitchous ecosystem policy-making process.
                 </li>
 
                 <li>
-                Membership: In addition to participating in governance, Ambitchous
+                    &#183;Membership: In addition to participating in governance, Ambitchous
                 token holders will have access to certain rights and protections
                 inside the ecosystem that non-holders would not.
                 </li>
                 <li>
-                Network Fees: Ambitchous Token is the main digital currency used
+                    &#183;Network Fees: Ambitchous Token is the main digital currency used
                 to pay transaction fees and make trades on the native NFT
                 Marketplace.
                 </li>
                 <li>
-                Rewards: Ambitchous Token would be used to distribute and give
+                    &#183;Rewards: Ambitchous Token would be used to distribute and give
                 rewards to all users.
                 </li>
             </ul>
@@ -128,56 +133,57 @@
     </div>
     <!-- FAQ Accordion End -->
 
-    <!-- footer start -->
-    <footer>
-        <div class="footer-container grid">
-            <div class="row-1">
-                <div class="logo">
-                    <a href="#">
-                        <img src="img/footer-logo.png" alt="Collectixt">
-                    </a>
-                </div>
-                <div class="language">
-                    <h1>Language</h1>
-                    <img src="img/eng.png" alt="ENG">
-                </div>
-                <div class="links">
-                    <h1>Links</h1>
-                    <ul class="nav-links">
-                        <div class="link-1">
-                            <a href="#"><li>About</li></a>
-                            <a href="#"><li>Tokenomics</li></a>
-                            <a href="#"><li>Roadmap</li></a>
-                            <a href="#"><li>Audit</li></a>
-                        </div>
-                        <div class="link-2">
-                            <a href="#"><li>Whitepaper</li></a>
-                            <a href="#"><li>FAQ</li></a>
-                            <a href="#"><li>Enter Presale</li></a>
-                        </div>
-                    </ul>
-                </div>
-                <div class="subscribe">
-                    <h1>Subscribe to our email</h1>
-                    <form>
-                        <input type="text" placeholder="Enter Valid Email Address" class="input">
-                        <button type="submit" class="btn">
-                            Subscribe
-                        </button>
-                    </form>
-                </div>
+   <!-- footer start -->
+   <footer>
+    <div class="footer-container grid">
+        <div class="row-1">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/footer-logo.png" alt="Collectixt">
+                </a>
             </div>
-
-            <div class="row-2">
-                <hr>
-                <div class="row-2-container">
-                    <div class="copyright">
-                        <h4>
-                            Copyright © 2022 Collectixt NFT Marketplace. All rights reserved
-                        </h4>
+            <div class="language">
+                <h1>Language</h1>
+                <img src="img/eng.png" alt="ENG">
+            </div>
+            <div class="links">
+                <h1>Links</h1>
+                <ul class="footer-links">
+                    <div class="link-1">
+                        <a href="#"><li>About</li></a>
+                        <a href="#"><li>Tokenomics</li></a>
+                        <a href="#"><li>Roadmap</li></a>
+                        <a href="#"><li>Audit</li></a>
                     </div>
-                    <div class="socials">
-                        <h3>Connect with Us</h3>
+                    <div class="link-2">
+                        <a href="#"><li>Whitepaper</li></a>
+                        <a href="#"><li>FAQ</li></a>
+                        <a href="#"><li>Enter Presale</li></a>
+                    </div>
+                </ul>
+            </div>
+            <div class="subscribe">
+                <h1>Subscribe to our email</h1>
+                <form>
+                    <input type="text" placeholder="Enter Valid Email Address" class="input">
+                    <button type="submit" class="btn">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="row-2">
+            <hr>
+            <div class="row-2-container">
+                <div class="copyright">
+                    <h4>
+                        Copyright © 2022 Collectixt NFT Marketplace. All rights reserved
+                    </h4>
+                </div>
+                <div class="socials">
+                    <h3>Connect with Us</h3>
+                        <div class="imgs">
                         <img src="img/socials/Vector.png" alt="Telegram">
                         <img src="img/socials/Vector-1.png" alt="Facebook">
                         <img src="img/socials/Vector-2.png" alt="Twitter">
@@ -186,27 +192,44 @@
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- footer end -->
+    </div>
+</footer>
+<!-- footer end -->
+<script>
+  // select all accordion items
+  const accItems = document.querySelectorAll(".accordion__item");
 
-    <script>
-      // select all accordion items
-      const accItems = document.querySelectorAll(".accordion__item");
+  // add a click event for all items
+  accItems.forEach((acc) => acc.addEventListener("click", toggleAcc));
 
-      // add a click event for all items
-      accItems.forEach((acc) => acc.addEventListener("click", toggleAcc));
+  function toggleAcc() {
+    // remove active class from all items exept the current item (this)
+    accItems.forEach((item) =>
+      item != this ? item.classList.remove("accordion__item--active") : null
+    );
 
-      function toggleAcc() {
-        // remove active class from all items exept the current item (this)
-        accItems.forEach((item) =>
-          item != this ? item.classList.remove("accordion__item--active") : null
-        );
+    // toggle active class on current item
+    if (this.classList != "accordion__item--active") {
+      this.classList.toggle("accordion__item--active");
+    }
+  }
 
-        // toggle active class on current item
-        if (this.classList != "accordion__item--active") {
-          this.classList.toggle("accordion__item--active");
+    const navLinks = document.querySelector(".nav-links");
+    const burger = document.querySelector(".burger");
+    const navbar = document.querySelector("nav");
+    window.onscroll = () => {
+        if (window.scrollY > 20) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
         }
-      }
-    </script>
+    };
+
+    burger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        burger.classList.toggle("toggled");
+    });
+
+</script>
   </body>
 </html>
