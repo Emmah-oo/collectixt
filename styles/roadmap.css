@@ -50,6 +50,39 @@
     color: #fff;
     border-radius: 10px;
     margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline ul li::after {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #0D1723;
+    border-radius: 50%;
+    top: 40%;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    height: 85%;
+    background-color: #0D1723;
+    width: 4px;
+    left: 103%;
+    top: 10%;
+    transform: translateX(-50%);
+}
+
+.timeline ul li:nth-child(odd)::after {
+    transform: translate(50%, -50%);
+    right: -15px;
+    top: 45%;
+}
+
+.timeline ul li:nth-child(even)::after {
+    transform: translate(-50%, -50%);
+    right: -34px;
 }
 
 .timeline ul li:last-child {
@@ -57,7 +90,7 @@
 }
 
 .timeline-content {
-    padding: 40px 56px;
+    padding: 40px 28px;
     border-radius: 8px;
     background: linear-gradient(360deg, #0D1723 2.62%, #2E3741 98.9%);
     border: 1px solid #FFFFFF;
@@ -141,9 +174,9 @@
     .timeline::before {
         content: '';
         position: absolute;
-        height: 90%;
+        height: 93%;
         background-color: #0D1723;
-        width: 1px;
+        width: 4px;
         left: 50%;
         top: 5%;
         transform: translateX(-50%);
@@ -187,4 +220,93 @@
         left: -30px;
     }
 
+}
+
+@media (max-width: 1200px) {
+    .mailing form .btn {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .timeline ul li:nth-child(odd)::after {
+        transform: translate(50%, -50%);
+        right: -14px;
+        top: 40%;
+    }
+
+    .intro {
+        margin-top: 10rem;
+    }
+
+    .intro h1 {
+        font-size: 27px;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .timeline ul li:nth-child(odd)::after {
+        transform: translate(50%, -50%);
+        right: -11px;
+        top: 36%;
+    }
+
+    .timeline ul li:nth-child(even)::after {
+        transform: translate(-50%, -50%);
+        right: -30px;
+    }
+
+    .mailing h1 {
+        font-size: 20px;
+    }
+
+    .mailing p {
+        font-size: 15px;
+        margin-top: 1rem;
+        line-height: 25px;
+    }
+
+    .mailing form .input {
+        width: 90%;
+        padding: 24px 24px;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 395px) {
+    .timeline ul li:nth-child(odd)::after {
+        transform: translate(50%, -50%);
+        right: -9px;
+    }
+
+    .timeline ul li:nth-child(even)::after {
+        transform: translate(-50%, -50%);
+        right: -29px;
+    }
+
+    .timeline::before {
+        height: 87%;
+    }
+
+    .intro p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 295px) {
+    .timeline ul li:nth-child(odd)::after {
+        top: 33%;
+        right: -7px;
+    }
+
+    .timeline ul li:nth-child(even)::after {
+
+        right: -27px;
+    }
 }

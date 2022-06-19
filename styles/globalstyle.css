@@ -11,6 +11,15 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+.time {
+  width: 100%;
+  text-align: center;
+}
+
 header nav {
   display: flex;
   justify-content: space-between;
@@ -20,7 +29,7 @@ header nav {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   transition: background-color 300ms linear;
 }
@@ -135,7 +144,7 @@ header .nav-links a {
 }
 
 .landscape-2 .container img {
-  width: 80%;
+  width: 100%;
 }
 
 footer {
@@ -266,7 +275,7 @@ footer .subscribe .btn {
 
 @media (max-width: 1000px) {
   header nav {
-    height: 12vh;
+    height: 10vh;
   }
   .nav-links {
     position: fixed;
@@ -288,7 +297,7 @@ footer .subscribe .btn {
 
   .nav-logo a {
     position: fixed;
-    top: 4%;
+    top: 3%;
     left: 5%;
     z-index: 1;
   }
@@ -304,7 +313,7 @@ footer .subscribe .btn {
   .burger {
     display: block;
     position: fixed;
-    top: 4%;
+    top: 3%;
     right: 5%;
     z-index: 1;
   }
@@ -364,5 +373,63 @@ footer .subscribe .btn {
 
   footer {
     padding: 5rem 2rem;
+  }
+
+  footer .footer-container .row-1 {
+    grid-template-columns: 1fr;
+    place-items: start;
+  }
+
+  footer .subscribe .input {
+    max-width: 250px;
+  }
+
+  footer .subscribe .btn {
+    align-self: start;
+  }
+
+  footer .row-2-container .socials {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .landscape-2 .container {
+    left: 5%;
+    top: -2%;
+  }
+}
+
+@media (max-width: 350px) {
+  .enter-presale .container .btn {
+    padding: 10px 23px;
+    font-size: 15px;
+  }
+
+  .features .grid img {
+    width: 80%;
+  }
+
+  .enter-presale .container h1 {
+    max-width: 95%;
+  }  
+
+  footer {
+    padding: 4rem 1rem;
+  }
+  footer .grid {
+    gap: 50px;
+  }
+
+  footer .logo a img {
+    width: 50%;
+  }
+
+  footer .subscribe .input {
+    width: 180px;
+  }
+
+  footer .subscribe .btn {
+    padding: 15px 30px;
   }
 }

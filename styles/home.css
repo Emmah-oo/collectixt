@@ -292,6 +292,7 @@ header {
 
   header {
     background-image: url("/img/Mobile-Hero-1.png");
+    
   }
 
   .hero {
@@ -315,25 +316,6 @@ header {
 
   .hero .countdown-timer {
     max-width: 100%;
-  }
-
-  footer .footer-container .row-1 {
-    grid-template-columns: 1fr;
-    place-items: start;
-  }
-
-  footer .subscribe .input {
-    max-width: 250px;
-  }
-
-  footer .subscribe .btn {
-    align-self: start;
-  }
-
-  footer .row-2-container .socials {
-    width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
   }
 
   .imgs {
@@ -389,5 +371,27 @@ header {
 
   .offers-section .offers .offer p {
     text-align: center;
+  }
+  
+}
+
+@media (max-width: 450px) {
+  header {
+    background-size: contain;
+    background-position: top;
+  }
+
+  .hero {
+    padding-top: 8rem;
+  }
+
+  .hero .hero-text {
+    margin-top: 28rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .hero .hero-text {
+    margin-top: 21rem;
   }
 }

@@ -26,3 +26,31 @@
     color: #575E66;
     margin-top: 3rem;
 }
+
+@media (max-width: 600px) {
+    .header {
+        display: grid;
+    }
+
+    .collectixt-img {
+        order: -1;
+    }
+
+    .collectixt h1 {
+        margin-bottom: 0px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .collectixt {
+        padding: 2rem 0;
+    }
+
+    .collectixt h1 {
+        max-width: 90%;
+        margin: 0 auto;
+        font-size: 20px;
+        padding-top: 3rem;
+    }
+}

@@ -10,6 +10,14 @@
     gap: 10px;
 }
 
+.about-us-img {
+    width: 100%;
+}
+
+.about-us-img img {
+    width: 100%;
+}
+
 .about-us .grid .about-us-text h1 {
     font-weight: 700;
     font-size: 30px;
@@ -35,6 +43,14 @@
     gap: 10px;
 }
 
+.mission-img {
+    width: 100%;
+}
+
+.mission-img img {
+    width: 100%;
+}
+
 .mission .grid .mission-text h1 {
     font-weight: 700;
     font-size: 30px;
@@ -58,6 +74,14 @@
     grid-template-columns: 1fr 1fr;
     place-items: center;
     gap: 10px;
+}
+
+.vision-img {
+    width: 100%;
+}
+
+.vision-img img {
+    width: 100%;
 }
 
 .vision .grid .vision-text h1 {
@@ -101,6 +125,7 @@
 .countdown-timer .countdown {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    width: 100%;
 }
 
 .countdown .time {
@@ -168,4 +193,150 @@
 
 .button {
     z-index: 1;
+}
+
+@media (max-width: 1300px) {
+    .countdown-timer {
+        padding: 3rem 5rem;
+    }
+
+    .countdown .time h1 {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .countdown-timer {
+        padding: 3rem 2rem;
+    }
+
+    .countdown .time h1 {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .about-us .grid .about-us-text h1,
+    .mission .grid .mission-text h1, 
+    .vision .grid .vision-text h1
+     {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    
+    .about-us .grid .about-us-text p,
+    .mission .grid .mission-text p,
+    .vision .grid .vision-text p
+     {
+        font-size: 15px;
+        line-height: 29px;
+    }
+
+    .countdown {
+        padding: 0rem;
+    }
+    
+    .landscape-2 {
+        margin-top: -4rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .countdown-timer {
+        padding: 2rem 2rem;
+    }
+
+    .countdown .time h1 {
+        padding: .4rem;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .colon {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-us .grid,
+    .mission .grid,
+    .vision .grid {
+        grid-template-columns: 1fr;
+    
+    }
+
+    .about-us-text {
+        order: 1;
+    }
+
+    .about-us {
+        padding: 1rem 0;
+        margin-top: 8rem;
+    }
+
+    .mission {
+        padding: 0rem;
+    }
+
+    .vision-text {
+        order: 1;
+    }
+}
+
+@media (max-width: 650px) {
+    .landscape-2 .mobile {
+        margin-top: 6rem;
+    } 
+
+    .landscape-2 a {
+        top: 10%;
+    }
+
+    .landscape-2 .btn {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .countdown {
+        margin: 0;
+    }
+
+    .countdown-timer h5 {
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+
+    .countdown .time h1 {
+        padding: .7rem ;
+        font-size: 20px;
+    }
+
+    .countdown .time p {
+        font-size: 12px;
+    }
+
+    .colon {
+        font-size: 1.5rem;
+    }
+
+    .landscape-2 {
+        margin-top: -1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .landscape-2 a {
+        top: -5%;
+    }
+
+    .landscape-2 .btn {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 350px) {
+   .countdown-timer {
+    padding: 2rem .5rem;
+   }
 }

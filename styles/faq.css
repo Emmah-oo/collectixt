@@ -20,7 +20,7 @@ body {
   margin: 0 auto;
   padding: 1.2rem 0;
   border-radius: 1rem;
-  padding: 15rem 0;
+  padding: 15rem 10%;
 }
 
 .accordion__heading {
@@ -93,4 +93,19 @@ body {
   opacity: 1;
   transform: translateX(0px);
   max-height: 100vh;
+}
+
+@media (max-width: 500px) {
+  .accordion__caption {
+    font-size: 15px;
+  }
+
+  .accordion__btn {
+    padding: 2rem 1rem;
+  }
+
+  .accordion__content p, .accordion li {
+    padding: 1rem 1rem;
+    font-size: 15px;
+  }
 }
