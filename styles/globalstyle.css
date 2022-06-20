@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap");
 
+select#language option[value="eng"]   { background-image:url(/img/eng.png);   } 
+
 * {
   margin: 0;
   padding: 0;
@@ -67,10 +69,6 @@ header .nav-links a {
 
 .scrolled li {
   color: #0d1723;
-}
-
-.scrolled h2 {
-  color: var(--black);
 }
 
 .container {
@@ -195,13 +193,16 @@ footer .footer-links a {
   text-decoration: none;
 }
 
-footer .footer-links a li {
+footer .footer-links a {
   list-style: none;
+  color: #fff;
 }
 
 .link-1 li,
 .link-2 li {
   line-height: 40px;
+  list-style: none;
+  color: #fff;
 }
 
 footer .links h1 {
@@ -214,12 +215,13 @@ footer .subscribe .input {
   border-radius: 8px;
   padding: 24px;
   outline: none;
+  border: 0;
 }
 
 footer .subscribe .btn {
-  padding: 17.5px 56px;
+  padding: 18.5px 56px;
   border: 0;
-  margin-left: -1rem;
+  margin-left: -2rem;
   border-radius: 8px;
   background: linear-gradient(90deg, #f87f0b 6.8%, #ffa900 95.7%);
   box-shadow: 0px 5px 50px 0px #ffa90080;
@@ -246,6 +248,16 @@ footer .subscribe .btn {
 }
 
 .row-2-container .socials img {
+  cursor: pointer;
+}
+
+select {
+  padding: .2rem .5rem;
+  outline: 0;
+  cursor: pointer;
+}
+
+option {
   cursor: pointer;
 }
 
