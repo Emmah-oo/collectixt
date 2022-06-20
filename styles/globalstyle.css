@@ -205,9 +205,6 @@ footer .footer-links a {
   color: #fff;
 }
 
-footer .links h1 {
-  margin-top: 0.2rem;
-}
 
 footer .subscribe .input {
   width: 260px;
@@ -252,9 +249,10 @@ footer .subscribe .btn {
 }
 
 select {
-  padding: .2rem .5rem;
+  padding: .2rem .3rem;
   outline: 0;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 option {
@@ -337,13 +335,23 @@ option {
     place-items: center;
   }
 
+  footer h1 {
+    margin: 0 ;
+    padding-right: .5rem;
+  }
+
   .language {
     display: flex;
+    
     align-items: center;
   }
 
   .language img {
     margin-left: 1rem;
+  }
+
+  .subscribe h1 {
+    margin-bottom: .3rem;
   }
 }
 
