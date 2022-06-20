@@ -1,5 +1,4 @@
 header {
-  /* min-height: 120vh; */
   background-image: url("/img/HeroBG-1.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -187,6 +186,7 @@ header {
 
 .business-imgs {
   padding: 2rem 0;
+  margin-top: -13rem;
 }
 
 .business-imgs h1 {
@@ -223,18 +223,6 @@ header {
   }
 }
 
-@media (max-width: 1300px) {
-  /* .features .grid img {
-        width: 80%;
-    } */
-}
-
-/* @media (max-width: 1200px) {
-    .business-imgs .business-img img {
-        height: 30px;
-    }
-} */
-
 @media (max-width: 1100px) {
   .hero .hero-text {
     max-width: 90%;
@@ -268,6 +256,10 @@ header {
 @media (max-width: 900px) {
   .business-imgs .business-img {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .business-imgs {
+    margin-top: -15rem;
   }
 }
 
@@ -333,10 +325,9 @@ header {
     margin-top: 2rem;
   }
 
-  /* .features .mobile img {
-        width: 50%;
-        justify-self: center;
-    } */
+  .business-imgs {
+    margin-top: -10rem;
+  }
 
   .features .desktop {
     display: none;

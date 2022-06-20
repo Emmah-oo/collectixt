@@ -28,10 +28,6 @@ body {
   padding: 0 1.4rem;
 }
 
-/* .accordion__item:not(:last-child) {
-  border-bottom: 1px solid lightgrey;
-} */
-
 .accordion__item {
     background: #EBEBEC;
     margin-bottom: 2rem;

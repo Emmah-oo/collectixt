@@ -1,5 +1,5 @@
 .about-us {
-    padding: 4rem 0;
+    padding: 2rem 0;
     margin-top: 4rem;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .mission {
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 
 .mission .grid {
@@ -66,7 +66,7 @@
 }
 
 .vision {
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 
 .vision .grid {
@@ -162,33 +162,31 @@
 }
 
 .landscape-2 {
-    margin-top: -9rem;
+    margin-top: -7rem;
     position: relative;
     z-index: -1;
 }
 
-.landscape-2 a {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    font-weight: 600;
-    font-size: 20px;
-    z-index: 1;
-    cursor: pointer;
-}
 
 .landscape-2 .btn {
     background: linear-gradient(90deg, #f87f0b 6.8%, #ffa900 95.7%);
     box-shadow: 0px 5px 50px 0px #ffa90080;
     box-shadow: 0px 15px 15px 0px #ffc000 inset;
     border-radius: 8px;
-    padding: 24px 56px;
+    padding: 20px 36px;
     border: 0;
     color: #fff;
     font-family: inherit;
     cursor: pointer;
     z-index: 1;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-weight: 600;
+    font-size: 15px;
+    z-index: 1;
+    cursor: pointer;
 }
 
 .button {
@@ -237,7 +235,7 @@
     }
     
     .landscape-2 {
-        margin-top: -4rem;
+        margin-top: -2.5rem;
     }
 }
 
@@ -288,7 +286,7 @@
         margin-top: 6rem;
     } 
 
-    .landscape-2 a {
+    .landscape-2 .btn {
         top: 10%;
     }
 
@@ -326,7 +324,7 @@
 }
 
 @media (max-width: 500px) {
-    .landscape-2 a {
+    .landscape-2 .btn {
         top: -5%;
     }
 

@@ -60,10 +60,6 @@
     width: 100%;
 }
 
-.tokenomics-details {
-    padding: 3rem 0;
-}
-
 .tokenomics-details .container {
     background: #EBEBEC;
     border-radius: 16px;
@@ -188,11 +184,6 @@
     .tokenomics-details .flex p {
         font-size: 30px;
     }
-
-    /* .coin {
-        order: 1;
-        margin-top: -14rem;
-    } */
 }
 
 @media (max-width: 450px) {
